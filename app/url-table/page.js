@@ -39,11 +39,11 @@ export default function UrlList() {
               <p className="text-gray-300">
                 <strong>Short URL:</strong>{" "}
                 <a
-                  href={"http://localhost:3000/api/urls/" + url.shortUrl}
+                  href={process.env.NEXT_PUBLIC_HOST + "/api/urls/" + url.shortUrl}
                   target="_blank"
                   className="underline hover:text-blue-300 transition"
                 >
-                  {"http://localhost:3000/api/urls/" + url.shortUrl}
+                  {process.env.NEXT_PUBLIC_HOST + "/api/urls/" + url.shortUrl}
                 </a>
               </p>
 
