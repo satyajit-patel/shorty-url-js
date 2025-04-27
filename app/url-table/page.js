@@ -33,7 +33,7 @@ export default function UrlList() {
               key={url._id}
               className="p-4 bg-gray-700 rounded-lg shadow border border-gray-600"
             >
-              <p className="text-gray-300">
+              <p className="text-gray-300 overflow-auto">
                 <strong>Original URL:</strong> {url.originalUrl}
               </p>
               <p className="text-gray-300">
